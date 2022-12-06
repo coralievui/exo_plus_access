@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Conseils sur la musculation et sur la nutrition</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section>
+        <p><a href="#main-content" alt="Accès Rapide">contenu principal</a></p>
+    </section>
+    <header role="banner">
+        <div class="header">
+            <h1>J'adore la muscu </h1>
+            <p>Salut à tous et bienvenue sur mon site, ici je vous propose quelques conseils sur la muscu et sur la
+                nutrition. Eh oui, la muscu sans nutrition, ça sert à rien.</p>
+            <nav role="navigation" aria-label="menu">
+                <ol class="menu_header">
+                    <li><a href="#presentation">Présentation</a></li>
+                    <li><a href="#conseils">Mes conseils</a></li>
+                    <li><a href="#nutrition">Nutrition</a></li>
+                    <li><a href="#newsletter">S'inscrire à la newsletter</a></li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <!--MAIN -->
+    <main role="main" id="main-content">
+        <section class="section" id="presentation">
+            <h2>Présentation</h2>
+            <div class="img-text-aside">
+                <img src="assets/moi.jpg" alt="John en pleine séance de musculation">
+                <div>
+                    <p>Salut moi c'est John, je suis un champion de muscu et vous pouvez le devenir aussi ! Ne vous
+                        moquez
+                        pas trop vite de moi, je ne suis pas un gros débile qui passe 100% de son temps à la salle à
+                        mater
+                        mes biceps. La preuve, vous êtes sur mon site web que j'ai codé avec mes petites mains musclées
+                        !
+                    </p>
+                    <p>J'adore partager mon expérience et je vois tellement de personnes qui galèrent à la salle que
+                        j'ai
+                        décidé ce partager mon XP sur le net ! J'espère que ça vous plaira. Si oui, n'hésitez pas à <a
+                            href="#newsletter">vous
+                            inscrire à ma newsletter </a> pour avoir toujours des nouvelles
+                        fraiches.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="section" id="conseils">
+            <h2>Mes conseils</h2>
+
+            <div class="img-text-aside">
+                <img src="assets/salle.jpg" alt="">
+                <div>
+                    <h3>A la salle</h3>
+                    <ul>
+                        <li>Soulever lourd</li>
+                        <li>Soulever longtemps</li>
+                        <li>Soulever beaucoup</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="img-text-aside">
+                <div>
+                    <h3>A la maison</h3>
+                    <ul>
+                        <li>Manger beaucoup</li>
+                        <li>Manger souvent</li>
+                        <li>Et surtout de la prot'</li>
+                    </ul>
+                </div>
+                <img src="assets/maison.jpg" alt="">
+
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="section" id="nutrition">
+            <h2>Les aliments bruts les plus riches en protéines !</h2>
+            <p>Je suis sur que vous galérez surement à manger assez de protéines pour prendre des maxi muscles, mais pas
+                de
+                panique, j'ai une source d'information incroyable pour vous permettre de maximiser vos gains !
+                <legend> <a href="https://ciqual.anses.fr/#/constituants/25003/proteines-n-x-6.25-(g-100-g)"
+                        target="_blank" aria-label="Lien externe vers site de référence">Source : Ciqual (ANSES) </a>
+                </legend>
+            </p>
+
+            <button id="btn-open-dialog">Découvrez ici !</button>
+
+
+        </section>
+
+        <hr>
+        <!--MODAL -->
+        <div role="dialog" id="prot-dialog" class="hidden">
+            <caption>
+                Liste des aliments bruts les plus riches en protéines
+            </caption>
+
+            <table role="table">
+                <thead>
+                    <th role="columnheader"><b>Aliment</b></th>
+                    <th role="columnheader"><b>Teneur moyenne (g/100g)</b></th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Oeuf, blanc (blanc d'oeuf), en poudre</td>
+                        <td>81,2</td>
+                    </tr>
+                    <tr>
+                        <td>Spiruline (Spirulina sp.), séchée ou déshydratée</td>
+                        <td>57,5</td>
+                    </tr>
+                    <tr>
+                        <td>Oeuf, en poudre</td>
+                        <td>47,9</td>
+                    </tr>
+                    <tr>
+                        <td>Morue, salée, sèche</td>
+                        <td>47,6</td>
+                    </tr>
+                    <tr>
+                        <td>Boeuf, joue, braisée ou bouillie</td>
+                        <td>39,2</td>
+                    </tr>
+                    <tr>
+                        <td>Farine de soja</td>
+                        <td>39,2</td>
+                    </tr>
+                    <tr>
+                        <td>Viande des Grisons</td>
+                        <td>38,9</td>
+                    </tr>
+                    <tr>
+                        <td>Soja, graine entière</td>
+                        <td>37,8</td>
+                    </tr>
+                    <tr>
+                        <td>Veau, jarret, braisé ou bouilli</td>
+                        <td>37,4</td>
+                    </tr>
+                    <tr>
+                        <td>Boeuf, plat de côtes, braisé</td>
+                        <td>37,3</td>
+                    </tr>
+                    <tr>
+                        <td>Porc, rouelle de jambon, cuite</td>
+                        <td>36,9</td>
+                    </tr>
+                    <tr>
+                        <td>Boeuf, paleron, braisé ou bouilli</td>
+                        <td>36,8</td>
+                    </tr>
+                    <tr>
+                        <td>Veau, épaule, braisée ou bouillie</td>
+                        <td>36,4</td>
+                    </tr>
+                    <tr>
+                        <td>Lupin, graine crue</td>
+                        <td>36,2</td>
+                    </tr>
+                    <tr>
+                </tbody>
+            </table>
+
+
+        </div>
+
+        <!-- FORM -->
+        <h2 id="newsletter">S'inscrire à la newsletter</h2>
+        <button id="disclosure-button" aria-controls="newsletter-form" aria-expanded="false" class="DisclosureButton">Je m'inscris !</button>
+        <div class="section">
+            <form id="newsletter-form" autocomplete="on">
+                <fieldset role="group">
+                    <legend>Vos coordonnées</legend>
+                    <div class="form-field">
+                        <label for="nom">Nom*</label>
+                        <input type="text" id="nom" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="prenom">Prénom*</label>
+                        <input type="text" id="prenom" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Adresse mail*</label>
+                        <input type="email" id="email" required>
+                    </div>
+                </fieldset>
+
+                <fieldset role="group">
+                    <legend>Quelle est votre utilisation du site ?</legend>
+                    <div class="checkboxes">
+                        <div>
+                            <input type="checkbox" id="travail-input-checkbox">
+                            <label for="travail-input-checkbox">pour la muscu</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="loisirs-input-checkbox">
+                            <label for="loisirs-input-checkbox">pour la nutrition</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="quotidien-input-checkbox">
+                            <label for="quotidien-input-checkbox">pour l'accessibilité</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <button type="submit" id="litige-button">S'inscrire à la newsletter</button>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <section role="contentinfo" class="">
+            <div>
+                <h2>Réseaux sociaux</h2>
+                <div>
+                    <i class="fab fa-facebook" role="image" alt="Nous retrouver sur Facebook"></i>
+                    <i class="fab fa-linkedin" role="image" alt="Nous retrouver sur LinkedIn"></i>
+                    <i class="fab fa-twitter" role="image" alt="Nous retrouver sur Twitter"></i>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="js/aria.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/406da18a0b.js" crossorigin="anonymous" defer=""></script>
+</body>
+
+</html>

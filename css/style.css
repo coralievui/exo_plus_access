@@ -1,0 +1,200 @@
+html {
+    background-color: #d0d0d0;
+    color: rgb(68, 66, 66)
+}
+
+a {
+    color: inherit;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    width: 70vw;
+}
+
+img {
+    max-height: 18vw;
+    border-radius: 1rem;
+    width: 40%;
+    height: auto;
+}
+
+table {
+    margin: 1rem auto;
+}
+
+.header,
+footer {
+    background-color: #282c34;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.header {
+    border-radius: .5rem .5rem 0 0;
+    margin: 0;
+}
+
+nav {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.menu_header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+}
+
+.menu_header li {
+    background-color: #cfcdcd;
+    padding: 1%;
+    border-radius: 2px;
+}
+
+.menu_header li a {
+    color: #000;
+    text-decoration: none;
+}
+
+main {
+    background-color: #FFF;
+    padding: 2%;
+}
+
+.section {
+    padding: 2% 0;
+}
+
+footer {
+    border-radius: 0 0 .5rem .5rem;
+}
+
+.img-text-aside {
+    display: flex;
+    margin: 1rem;
+}
+
+.img-text-aside div {
+    text-align: left;
+    margin: 0 1rem;
+    width: 50%;
+}
+
+.img-text-aside div p {
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+[role="alertdialog"],
+[role="dialog"] {
+    width: 70%;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 2px solid #000;
+    background-color: #fff;
+    z-index: 10;
+    box-shadow: 0 1rem 2rem rgb(0 0 0 / 12%), 0 1rem 1rem rgb(0 0 0 / 22%);
+}
+
+/* this is added to the body when a dialog is open */
+.has-dialog {
+    overflow: hidden;
+}
+
+/* native <dialog> element uses the ::backdrop pseudo-element */
+/* dialog::backdrop, */
+.dialog-backdrop {
+    display: none;
+    position: fixed;
+    overflow-y: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgb(0 0 0 / 50%);
+}
+
+.dialog-backdrop.active {
+    display: block;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-field {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.form-field input {
+    margin: 0 0 1% 1%;
+}
+
+.checkboxes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/** Responsive **/
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+    body{
+        width: 95%;
+    }
+
+    .menu_header {
+        flex-direction: column;
+        width: 75%;
+    }
+
+    .menu_header li {
+        margin: 1%;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .img-text-aside {
+        flex-direction: column;
+    }
+
+    img {
+        max-width: 100%;
+        max-height: max-content;
+        width: 100%;
+    }
+
+    .img-text-aside div {
+        margin: 1rem 1rem;
+        width: 100%;
+    }
+
+    form {
+        width: 95%;
+    }
+}
